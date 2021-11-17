@@ -1,0 +1,1 @@
+# traditional-chinese-synth-text
