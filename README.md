@@ -10,6 +10,9 @@ We generated over 20 million synthetic data and collected over 7,000 manually la
 
 ## Synthetic Dataset: TCSynth
 
+
+## Labeled Data: TC-STR 7k-word
+
 Our *TC-STR 7k-word* dataset collects about 1,554 images from Google image search to produce 7,543 cropped text images. To increase the diversity in our collected scene text images, we search for images under different scenarios and query keywords. Since the collected scene text images are to be used in evaluating text recognition performance, we manually crop text from the collected images and assign a label to each cropped text box. 
 
 *TC-STR 7k-word* dataset includes a training set of 3,837 text images and a testing set of 3,706 images.
@@ -34,10 +37,6 @@ images/billboard_00000_010_雜貨鋪.jpg 雜貨鋪
 images/sign_02616_999_民生路.png 民生路
 ...
 ```
-
-
-## Labeled Data: TC-STR 7k-word
-
 
 ## Citation
 
