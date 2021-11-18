@@ -38,6 +38,8 @@ images/sign_02616_999_民生路.png 民生路
 ...
 ```
 
+![TC-STR_demo](misc/TC-STR_demo.png)
+
 ## Citation
 
 Please consider citing this work in your publications if it helps your research.
