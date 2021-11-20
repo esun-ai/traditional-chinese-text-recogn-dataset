@@ -10,14 +10,56 @@ We generated over 20 million synthetic data and collected over 7,000 manually la
 
 ## Synthetic Dataset: TCSynth
 
+Inspired by *MJSynth*, *SynthText* and [Belval/TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator), we propose a framework for generating scene text images for Traditional Chinese. To produce synthetic text images similar to real-world ones, we use different kinds of mechanisms for rendering, including word sampling, character spacing, font types/sizes, text coloring, text stroking, text skewing/distorting, background rendering, text Location and noise.
+
+![synth_text_pipeline](misc/synth_text_pipeline.png)
+
+***TCSynth* dataset includes 21,535,590 synthetic text images.**
+
+- Download: 
+    - [TCSynth LMDB Version (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth.tar.gz) [21GB (54GB after untaring)]
+    - [TCSynth Raw Version]() []
+
+***TCSynth-VAL* dataset includes 6,000 synthetic text images for validation.**
+
+- Download: 
+    - [TCSynth-VAL LMDB Version (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth-VAL.tar.gz)
+    - [TCSynth-VAL Raw Version](https://storage.googleapis.com/esun-ai/TCSynth-VAL_raw.tar.gz)
+
+### LMDB Version
+
+
+### Raw Version
+
+```
+TCSynth_raw/
+├── labels.txt
+├── 0000/
+│   ├── 00000001.jpg
+│   ├── 00000002.jpg
+│   ├── 00000003.jpg
+│   └── ...
+├── 0001/
+├── 0002/
+└── ...
+```
+
+format of labels.txt: `{imagepath}\t{label}\n`, for example:
+
+```
+0000/00000001.jpg 㒓
+...
+```
 
 ## Labeled Data: TC-STR 7k-word
 
 Our *TC-STR 7k-word* dataset collects about 1,554 images from Google image search to produce 7,543 cropped text images. To increase the diversity in our collected scene text images, we search for images under different scenarios and query keywords. Since the collected scene text images are to be used in evaluating text recognition performance, we manually crop text from the collected images and assign a label to each cropped text box. 
 
-*TC-STR 7k-word* dataset includes a training set of 3,837 text images and a testing set of 3,706 images.
+![TC-STR_demo](misc/TC-STR_demo.png)
 
-Download: [TC-STR.tar.gz](https://storage.googleapis.com/esun-ai/TC-STR.tar.gz)
+***TC-STR 7k-word* dataset includes a training set of 3,837 text images and a testing set of 3,706 images.**
+
+- Download: [TC-STR.tar.gz](https://storage.googleapis.com/esun-ai/TC-STR.tar.gz)
 
 ```
 TC-STR/
@@ -37,8 +79,6 @@ images/billboard_00000_010_雜貨鋪.jpg 雜貨鋪
 images/sign_02616_999_民生路.png 民生路
 ...
 ```
-
-![TC-STR_demo](misc/TC-STR_demo.png)
 
 ## Citation
 
