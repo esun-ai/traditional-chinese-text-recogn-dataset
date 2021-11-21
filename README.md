@@ -47,19 +47,29 @@ pip install -r lmdb_tools/requirements.txt
 - Insert images into LMDB
 
 ```
-python lmdb_tools/prepare_lmdb.py --input_dir IMG_FOLDER --gt_file GT --output_dir LMDB_FOLDER
+python lmdb_tools/prepare_lmdb.py \
+  --input_dir IMG_FOLDER \
+  --gt_file GT \
+  --output_dir LMDB_FOLDER
 ```
 
 - Insert images into LMDB (asynchronous version)
 
 ```
-python lmdb_tools/prepare_lmdb_async.py --input_dir IMG_FOLDER --gt_file GT --output_dir LMDB_FOLDER --workers WORKERS
+python lmdb_tools/prepare_lmdb_async.py \
+  --input_dir IMG_FOLDER \
+  --gt_file GT \
+  --output_dir LMDB_FOLDER \
+  --workers WORKERS
 ```
 
 - Extract images from LMDB (asynchronous version)
 
 ```
-python lmdb_tools/extract_to_files.py --input_lmdb LMDB_FOLDER --output_dir IMG_FOLDER --workers WORKERS
+python lmdb_tools/extract_to_files.py \
+  --input_lmdb LMDB_FOLDER \
+  --output_dir IMG_FOLDER \
+  --workers WORKERS
 ```
 
 ### Raw Version
