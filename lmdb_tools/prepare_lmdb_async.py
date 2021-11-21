@@ -1,10 +1,10 @@
 import os
 import argparse
+from multiprocessing import Pool
 
 import cv2
 import numpy as np
 from tqdm import tqdm
-from multiprocessing import Pool
 
 from lmdb_connector import LmdbConnector
 
