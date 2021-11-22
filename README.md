@@ -63,7 +63,7 @@ python lmdb_tools/prepare_lmdb_async.py \
   --workers WORKERS
 ```
 
-- Extract images from LMDB (asynchronous version)
+- Extract images from LMDB (asynchronous version) **(convert LMDB Version to Raw Version)**
 
 ```
 python lmdb_tools/extract_to_files.py \
