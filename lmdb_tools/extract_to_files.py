@@ -66,4 +66,4 @@ if __name__ == '__main__':
     parser.add_argument('--rgb', action='store_true', help='rgb')
     opt = parser.parse_args()
 
-    extract_to_files(opt.input_lmdb, opt.output_dir, opt.rgb, 4)
+    extract_to_files(opt.input_lmdb, opt.output_dir, opt.rgb, opt.workers)
