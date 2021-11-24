@@ -18,7 +18,7 @@ Inspired by *MJSynth*, *SynthText* and [Belval/TextRecognitionDataGenerator](htt
 
 - Download: 
     - [TCSynth LMDB Version (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth.tar.gz) [21 GB (54 GB after untaring)]
-    - [TCSynth Raw Version]() [18 GB (85 GB after untaring)]
+    - [TCSynth Raw Version](https://storage.googleapis.com/esun-ai/TCSynth_raw.tar.gz) [18 GB (85 GB after untaring)]
 
 ***TCSynth-VAL* dataset includes 6,000 synthetic text images for validation.**
 
