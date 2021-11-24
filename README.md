@@ -17,16 +17,16 @@ Inspired by *MJSynth*, *SynthText* and [Belval/TextRecognitionDataGenerator](htt
 ***TCSynth* dataset includes 21,535,590 synthetic text images.**
 
 - Download: 
-    - [TCSynth LMDB Version (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth.tar.gz) [21 GB (54 GB after untaring)]
-    - [TCSynth Raw Version](https://storage.googleapis.com/esun-ai/TCSynth_raw.tar.gz) [18 GB (85 GB after untaring)]
+    - [TCSynth LMDB Format (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth.tar.gz) [21 GB (54 GB after untaring)]
+    - [TCSynth Raw Format](https://storage.googleapis.com/esun-ai/TCSynth_raw.tar.gz) [18 GB (85 GB after untaring)]
 
 ***TCSynth-VAL* dataset includes 6,000 synthetic text images for validation.**
 
 - Download: 
-    - [TCSynth-VAL LMDB Version (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth-VAL.tar.gz)
-    - [TCSynth-VAL Raw Version](https://storage.googleapis.com/esun-ai/TCSynth-VAL_raw.tar.gz)
+    - [TCSynth-VAL LMDB Format (Recommanded)](https://storage.googleapis.com/esun-ai/TCSynth-VAL.tar.gz)
+    - [TCSynth-VAL Raw Format](https://storage.googleapis.com/esun-ai/TCSynth-VAL_raw.tar.gz)
 
-### LMDB Version
+### LMDB Format
 
 After untaring,
 
@@ -36,7 +36,7 @@ TCSynth/
 └── lock.mdb
 ```
 
-Our data structure of LMDB follows the repo. [clovaai/deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). The value queried by key `'num-samples'.encode()` gets total number of text images. The index of text images starts from 1. Given the `index`, we can query binary of the image and its label by key `'image-%09d'.encode() % index` and `'label-%09d'.encode() % index`. The implement details are shown in the class [`LmdbConnector`](https://github.com/GitYCC/traditional-chinese-text-recogn-dataset/blob/main/lmdb_tools/lmdb_connector.py#L7) in [`lmdb_tools/lmdb_connector.py`](./lmdb_tools/lmdb_connector.py).
+Our data structure of LMDB follows the repo. [clovaai/deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). The value queried by key `'num-samples'.encode()` gets total number of text images. The indexes of text images starts from 1. Given the `index`, we can query binary of the image and its label by key `'image-%09d'.encode() % index` and `'label-%09d'.encode() % index`. The implement details are shown in the class [`LmdbConnector`](https://github.com/GitYCC/traditional-chinese-text-recogn-dataset/blob/main/lmdb_tools/lmdb_connector.py#L7) in [`lmdb_tools/lmdb_connector.py`](./lmdb_tools/lmdb_connector.py).
 
 We also provide several tools to manipulate the LMDB shown in [`lmdb_tools`](./lmdb_tools). Before using those tools, we should install some dependencies. (tested with python 3.6)
 
@@ -63,7 +63,7 @@ python lmdb_tools/prepare_lmdb_async.py \
   --workers WORKERS
 ```
 
-- Extract images from LMDB (asynchronous version) **(convert LMDB Version to Raw Version)**
+- Extract images from LMDB (asynchronous version) **(convert LMDB Format to Raw Format)**
 
 ```
 python lmdb_tools/extract_to_files.py \
@@ -72,7 +72,7 @@ python lmdb_tools/extract_to_files.py \
   --workers WORKERS
 ```
 
-### Raw Version
+### Raw Format
 
 After untaring,
 
