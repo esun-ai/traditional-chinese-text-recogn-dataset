@@ -2,7 +2,7 @@
 
 Authors: [Yi-Chang Chen](https://github.com/GitYCC), Yu-Chuan Chang, Yen-Cheng Chang and Yi-Ren Yeh
 
-Paper: 
+Paper: https://arxiv.org/abs/2111.13327
 
 Scene text recognition (STR) has been widely studied in academia and industry. Training a text recognition model often requires a large amount of labeled data, but data labeling can be difficult, expensive, or time-consuming, especially for Traditional Chinese text recognition. To the best of our knowledge, public datasets for Traditional Chinese text recognition are lacking. 
 
@@ -131,4 +131,10 @@ images/sign_02616_999_民生路.png 民生路
 
 Please consider citing this work in your publications if it helps your research.
 ```
+@article{chen2021traditional,
+  title={Traditional Chinese Synthetic Datasets Verified with Labeled Data for Scene Text Recognition},
+  author={Yi-Chang Chen and Yu-Chuan Chang and Yen-Cheng Chang and Yi-Ren Yeh},
+  journal={arXiv preprint arXiv:2111.13327},
+  year={2021}
+}
 ```
